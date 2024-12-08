@@ -17,10 +17,10 @@ pub fn send_to_llm(query: &str) -> Result<String, Box<dyn Error>> {
     let client = Client::new();
 
     // API URL and Key
-    let api_url = "https://YOUR_MODEL_URL?key=[API_KEY]";
+    let api_url = "https://YOUR_MODEL_URL?key=[API_KEY_Here]";
 
     // Send POST Request to API
-    let response = client.post(api_url)
+    let response = client.post(api_url_here)
         .header("Content-Type", "application/json")
         .json(&json!({
             "contents": [
